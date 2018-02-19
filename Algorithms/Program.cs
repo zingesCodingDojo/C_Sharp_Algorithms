@@ -19,6 +19,9 @@ namespace Algorithms
 				() => PrintEmployeeDetails()
 			);
 			Console.ReadLine();
+			DerpyStack<int> myStack = new DerpyStack<int>(5);
+			System.Console.WriteLine(myStack);
+			
 		}
 		private static void PrintStudentMethod()
 		{
@@ -53,5 +56,7 @@ namespace Algorithms
 			int num;
 			lbArray1.Text = "";
 		}
+
+
     }
 }
