@@ -1,0 +1,10 @@
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/obj/Debug/netcoreapp2.0/C_Sharp_Mark.csproj.CoreCompileInputs.cache
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/obj/Debug/netcoreapp2.0/C_Sharp_Mark.AssemblyInfoInputs.cache
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/obj/Debug/netcoreapp2.0/C_Sharp_Mark.AssemblyInfo.cs
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/bin/Debug/netcoreapp2.0/C_Sharp_Mark.deps.json
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/bin/Debug/netcoreapp2.0/C_Sharp_Mark.runtimeconfig.json
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/bin/Debug/netcoreapp2.0/C_Sharp_Mark.runtimeconfig.dev.json
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/bin/Debug/netcoreapp2.0/C_Sharp_Mark.dll
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/bin/Debug/netcoreapp2.0/C_Sharp_Mark.pdb
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/obj/Debug/netcoreapp2.0/C_Sharp_Mark.dll
+/Users/ceelos/C_PoundSign_Algorithms/C_Sharp_Mark/obj/Debug/netcoreapp2.0/C_Sharp_Mark.pdb
