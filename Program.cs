@@ -20,15 +20,21 @@ namespace C_Sharp_Mark
 			// 	() => PrintEmployeeDetails()
 			// );
 			// Console.ReadLine();
-			DerpyStack<int> myStack = new DerpyStack<int>(5);
-			myStack.push(5);
-			System.Console.WriteLine("My size is: " + myStack.counter);
-			for(int i = 0; i < myStack.counter ; i++)
-			{
-				System.Console.WriteLine(i);
-			}
+			// DerpyStack<int> myStack = new DerpyStack<int>(5);
+			// myStack.push(5);
+			// System.Console.WriteLine("My size is: " + myStack.counter);
+			// for(int i = 0; i < myStack.counter ; i++)
+			// {
+			// 	System.Console.WriteLine(i);
+			// }
 			
-			System.Console.WriteLine(myStack);
+			// System.Console.WriteLine(myStack);
+
+			Page76 myString = new Page76();
+			string testingString = "Hello Pagessssss";
+			string testingRemovals = "els";
+
+			System.Console.WriteLine(myString.removeChars(testingString, testingRemovals));
 			
 		}
 		// private static void PrintStudentMethod()

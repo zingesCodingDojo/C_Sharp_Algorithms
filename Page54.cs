@@ -23,8 +23,7 @@ namespace C_Sharp_Mark
     public class IntNode : MyNode {
         private int value;
         // Improper implementation! FIX IT!
-        public IntNode( MyNode[] children, int value){
-            base(children);
+        public IntNode( MyNode[] children, int value) : base(children){
             this.value = value;
         }
 

@@ -24,10 +24,11 @@ namespace C_Sharp_Mark{
             char[] r = remove.ToCharArray();
             bool[] flags = new bool[128]; // assumes ASCII!
             int len = s.Length;
+            System.Console.WriteLine("New char array has a length of: " + len + " and your bool array is... " + flags.Length);
             int src, dst;
 
             // Set flags for characters to be removed
-            for( src = 0; src < len; src++){
+            for( src = 0; src < r.Length; src++){
                 flags[r[src]] = true;
             }
 
@@ -41,7 +42,7 @@ namespace C_Sharp_Mark{
                 }
                 src++;
             }
-            return new string( s, 0, dst );
+            return new String( s, 0, dst );
         }
     }
 }
