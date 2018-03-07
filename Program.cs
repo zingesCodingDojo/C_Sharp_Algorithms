@@ -35,6 +35,38 @@ namespace C_Sharp_Mark
 			string testingRemovals = "els";
 
 			System.Console.WriteLine(myString.removeChars(testingString, testingRemovals));
+			string testing_reversingSelf = "Hello World!";
+			ReverseWord reversingSelf = new ReverseWord();
+			System.Console.WriteLine(reversingSelf.m_reverse(testing_reversingSelf));
+			string test85 = "316";
+			int i = 0, num =0;
+			int len = test85.Length;
+			while( i < len ){
+				num *= 10;
+				num += ( test85[i++] - '0');// remove a 0!
+			}
+			System.Console.WriteLine(num + test85);
+			
+			// FUN WITH MARK!
+			// Page63Node<int> newStack = new Page63Node<int>();
+			// newStack.push(5);
+			// newStack.push(4);
+			// System.Console.WriteLine(newStack.pop());
+			// newStack.printStack();
+			// // newStack.push(100);
+			// newStack.pop();
+			// newStack.printStack();
+			// newStack.push(1);
+			// newStack.printStack();
+			// for(var i = 0; i < 100; i++){
+			// 	newStack.push(i);
+			// }
+			// // newStack.printFullStack();
+			// newStack.printStack();
+			// // Page63Node<int> reversed_stack = newStack.reverse();
+			// // reversed_stack.printFullStack();
+			// newStack.m_reverse();
+			// newStack.printFullStack();
 			
 		}
 		// private static void PrintStudentMethod()

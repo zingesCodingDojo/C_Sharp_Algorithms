@@ -22,7 +22,10 @@ namespace C_Sharp_Mark{
         public String removeChars( String str, String remove ){
             char[] s = str.ToCharArray();
             char[] r = remove.ToCharArray();
-            bool[] flags = new bool[128]; // assumes ASCII!
+            for( int i = 0; i < s.Length; i++){
+                System.Console.WriteLine((int)s[i]);
+            }
+            bool[] flags = new bool[128]; // assumes ASCII! <-- super cool.
             int len = s.Length;
             System.Console.WriteLine("New char array has a length of: " + len + " and your bool array is... " + flags.Length);
             int src, dst;
@@ -37,7 +40,12 @@ namespace C_Sharp_Mark{
 
             // Now loop through all the characters, copying only if they are not flagged
             while( src < len ){
-                if( !flags[(int)s[src]]){
+                /*
+                Get ASCII number. So, it only gets chars not flagged. Example, 'a' has a false flag and I want to insert it
+                so it inserts it! If it looks at 'a' and it has a true flag, it will NOT insert it, since it has been flagged as
+                a do not true flag to not insert.
+                */
+                if( !flags[(int)s[src]]){ 
                     s[dst++] = s[src];
                 }
                 src++;

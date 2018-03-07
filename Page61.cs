@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 /*
 Preorder Traversal
@@ -118,6 +119,7 @@ namespace C_Sharp_Mark{
         }
         
         private StackNode<T> top;
+        private int counter = 0;
         public T pop() {
             if ( top == null ) {
                 System.Console.WriteLine("ERROR: 'Stack is empty.'");
@@ -132,14 +134,54 @@ namespace C_Sharp_Mark{
             t.next = top;
             top = t;
         }
-        
+        public void printFullStack(){
+            StackNode<T> tempLooker = top;
+            while(tempLooker != null){
+                System.Console.WriteLine("My current data is: " + tempLooker.data);
+                tempLooker = tempLooker.next;
+            }
+        }
+        // REVERSE STACK and return NEW STACK;
+        public Page63Node<T> reverse(){
+            StackNode<T> current_node = top;
+            Page63Node<T> reversed_stack = new Page63Node<T>();
+            while(current_node != null){
+                reversed_stack.push(current_node.data);
+                current_node = current_node.next;
+            }
+            return reversed_stack;
+        }
+        // REVERSE STACK and return same stack;
+        public void m_reverse(){
+            StackNode<T> current_node = top;
+            while( current_node != null ){
+                System.Console.WriteLine("My current value is: " + current_node.data);
+                StackNode<T> temp_current_node = current_node;
+                current_node = current_node.next;
+                StackNode<T> second_temp_current_node = current_node;
+                
+                current_node.next = temp_current_node.next;
+                // I want current.next to be stored temp
+                // Then I want to change the node I am looking at.
+                // Then i want to change the current node I am looking at to change its node.next to the previous temp one from
+                // above.
+                
+            }
+            top = current_node;
+        }
         public T peek() {
             if ( top == null ) {
                 System.Console.WriteLine("ERROR; 'Stack is empty.'");
             }
             return top.data;
         }
-        
+        public void printStack(){
+            if ( top == null){
+                System.Console.WriteLine("ERROR: 'Stack is Empty.'");
+                return;
+            }
+            System.Console.WriteLine("Top of stack has value of: " + top.data);
+        }
         public bool isEmpty() {
             return top == null;
         }
