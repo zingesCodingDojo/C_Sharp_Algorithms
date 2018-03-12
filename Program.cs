@@ -30,22 +30,26 @@ namespace C_Sharp_Mark
 			
 			// System.Console.WriteLine(myStack);
 
-			Page76 myString = new Page76();
-			string testingString = "Hello Pagessssss";
-			string testingRemovals = "els";
+			// Page76 myString = new Page76();
+			// string testingString = "Hello Pagessssss";
+			// string testingRemovals = "els";
 
-			System.Console.WriteLine(myString.removeChars(testingString, testingRemovals));
-			string testing_reversingSelf = "Hello World!";
-			ReverseWord reversingSelf = new ReverseWord();
-			System.Console.WriteLine(reversingSelf.m_reverse(testing_reversingSelf));
-			string test85 = "316";
-			int i = 0, num =0;
-			int len = test85.Length;
-			while( i < len ){
-				num *= 10;
-				num += ( test85[i++] - '0');// remove a 0!
-			}
-			System.Console.WriteLine(num + test85);
+			// System.Console.WriteLine(myString.removeChars(testingString, testingRemovals));
+			// string testing_reversingSelf = "Hello World!";
+			// ReverseWord reversingSelf = new ReverseWord();
+			// System.Console.WriteLine(reversingSelf.m_reverse(testing_reversingSelf));
+			// string test85 = "316";
+			// int i = 0, num =0;
+			// int len = test85.Length;
+			// while( i < len ){
+			// 	num *= 10;
+			// 	num += ( test85[i++] - '0');// remove a 0!
+			// }
+			// System.Console.WriteLine(num + test85);
+			StringPermutations testPerm = new StringPermutations();
+			string myTestString = "ABCD";
+			char[] myTestStringArray = myTestString.ToCharArray();
+			testPerm.set_permutations(myTestStringArray);
 			
 			// FUN WITH MARK!
 			// Page63Node<int> newStack = new Page63Node<int>();
